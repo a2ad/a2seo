@@ -7,12 +7,15 @@
      */
 
     @media only screen {
-		.wrapper {
+        .wrapper {
             margin: 20px auto 0 auto;
             max-width: 900px;
             padding: 0px 20px 10px 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
 
             div { 
                 width: 50%;
@@ -20,6 +23,8 @@
             }
 
             label { 
+                display: -webkit-box; 
+                display: -ms-flexbox; 
                 display: flex;
                 color: $font-color;
                 font-weight: 300;

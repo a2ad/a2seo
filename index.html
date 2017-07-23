@@ -2,19 +2,76 @@
 <html lang="pt-BR">
 <head>
 	<link rel="icon" href="build/img/favicon.ico">
-	<title>A2 SEO</title>
+	<title>A2ad | A2 SEO</title>
 	<link rel="stylesheet" href="build/css/main.min.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- General markup -->
+	<meta name="description" content="Gerador de meta tags para SEO">
+	<meta name="author" content="A2ad">
+	<link rel="base" href="https://a2ad.github.io/">
+	<link rel="canonical" href="https://a2ad.github.io/a2seo/">
+	<meta rel="sitemap" type="application/xml" href="">
+	<meta name="robots" content="index/follow">
+	<meta name="googlebot" content="index/follow">
+	<meta name="theme-color" content="#ffff00">
+	<meta name="msapplication-navbutton-color" content="#ffff00">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ffff00">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="A2 SEO">
+	<meta itemprop="description" content="Gerador de meta tags para SEO">
+	<meta itemprop="image" content="https://github.com/a2ad/a2seo/blob/gh-pages/build/img/logo-a2ad.svg">
+
+	<!-- Markup for Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="A2ad SEO">
+	<meta property="og:url" content="https://a2ad.github.io/">
+	<meta property="og:site_name" content="A2 SEO">
+	<meta property="og:image" content="https://github.com/a2ad/a2seo/blob/gh-pages/build/img/logo-a2ad.svg">
+	<meta property="og:description" content="Gerador de meta tags para SEO">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="fb:app_id" content="384593848366233">
+	<meta property="fb:admins" content="100003036613503">
+
+	<!-- Markup for Twitter -->
+	<meta name="twitter:card" content="Summary">
+	<meta name="twitter:title" content="A2 SEO">
+	<meta name="twitter:description" content="Gerador de meta tags para SEO">
+	<meta name="twitter:creator" content="A2ad">
+	<meta name="twitter:image" content="https://github.com/a2ad/a2seo/blob/gh-pages/build/img/logo-a2ad.svg">
 </head>
 <body>
 <main class="main">
 	<!-- Header -->
 	<div class="main-header">
 		<header class="header">
-			<h1 class="logo">
+			<div class="logo">
 				<a href="a2ad.com.br">
 					<img src="build/img/logo-a2ad.svg" alt="A2ad">
 				</a>
-			</h1>
+			</div>
+			<h1 class="header-title">A2 SEO</h1>
 		</header>
 	</div>
 	<!-- Content -->
@@ -162,18 +219,18 @@
 		</section>
 
 		<div class="generate">
-			<button class="btn btn-primary" id="generate">Generate SEO</button>
+			<a href="#output" class="btn btn-primary" id="generate">Gerar meta tags</a>
 		</div>
 
-		<section class="output">
+		<section class="output" id="output">
 		<h2>Seu código:</h2>
 			<pre>
 <span class="comment">&lt;!-- General markup --&gt;</span>
 <span class="tag">&lt;title&gt;</span><span id="o-title">A2ad whatever digital</span><span class="tag">&lt;/title&gt;</span>
-<span class="tag">&lt;meta</span> name="<span class="value">description</span>" content="<span id="o-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
-<span class="tag">&lt;meta</span> name="<span class="value">author</span>" content="<span id="o-author" class="value">A2ad</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;link</span> rel="<span class="value">base</span>" href="<span id="o-url" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;link</span> rel="<span class="value">canonical</span>" href="<span id="o-canonical" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">description</span>" content="<span id="o-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">author</span>" content="<span id="o-author" class="value">A2ad</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> rel="<span class="value">sitemap</span>" type="<span class="value">application/xml</span>" href="<span id="o-sitemap" class="value">http://a2ad.com.br/sitemap.xml</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">robots</span>" content="<span id="o-robots" class="value">index/follow</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">googlebot</span>" content="<span id="o-googlebot" class="value">index/follow</span>"<span class="tag">&gt;</span>
@@ -181,12 +238,12 @@
 <span class="tag">&lt;meta</span> name="<span class="value">msapplication-navbutton-color</span>" content="<span id="o-themecolor-ms" class="value">#fffd00</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">apple-mobile-web-app-status-bar-style</span>" content="<span id="o-themecolor-apple" class="value">#fffd00</span>"<span class="tag">&gt;</span>
 
-<span class="comment">&lt;-- Schema.org markup for Google+ --&gt;</span>
+<span class="comment">&lt;!-- Schema.org markup for Google+ --&gt;</span>
 <span class="tag">&lt;meta</span> itemprop="<span class="value">name</span>" content="<span id="o-google-name" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> itemprop="<span class="value">description</span>" content="<span id="o-google-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> itemprop="<span class="value">image</span>" content="<span id="o-google-image" class="value">http://a2ad.com.br/img/logo.png</span>"<span class="tag">&gt;</span>
 
-<span class="comment">&lt;-- Markup for Facebook --&gt;</span>
+<span class="comment">&lt;!-- Markup for Facebook --&gt;</span>
 <span class="tag">&lt;meta</span> property="<span class="value">og:type</span>" content="<span id="o-fb-type" class="value">website</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> property="<span class="value">og:title</span>" content="<span id="o-fb-title" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> property="<span class="value">og:url</span>" content="<span id="o-fb-url" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
@@ -197,7 +254,7 @@
 <span class="tag">&lt;meta</span> property="<span class="value">fb:app_id</span>" content="<span id="o-fb-appid" class="value">384593848366233</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> property="<span class="value">fb:admins</span>" content="<span id="o-fb-admins" class="value">100003036613503</span>"<span class="tag">&gt;</span>
 
-<span class="comment">&lt;-- Markup for Twitter --&gt;</span>
+<span class="comment">&lt;!-- Markup for Twitter --&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">twitter:card</span>" content="<span id="o-tw-card" class="value">summary</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">twitter:title</span>" content="<span id="o-tw-title" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
 <span class="tag">&lt;meta</span> name="<span class="value">twitter:description</span>" content="<span id="o-tw-description" class="value">A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
@@ -206,6 +263,7 @@
 			</pre>
 		</section>
 	</div>
+	<footer class="footer"></footer>
 </main>
 <script src="build/js/libs/html5shiv.min.js"></script>
 <script src="build/js/scripts.min.js"></script>

@@ -70,6 +70,9 @@
 				app.output.style.display = 'block';
 
 				app.oTitle.innerText = app.title.value;
+
+				// sessionStorage.setItem('title', JSON.stringify(app.oTitle.innerText));
+
 				app.oDescription.innerText = app.description.value;
 				app.oAuthor.innerText = app.author.value;
 				app.oUrl.innerText = app.urlBase.value;

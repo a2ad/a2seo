@@ -7,19 +7,34 @@
      */
 
     @media only screen {
-		.main-header {
-			background-color: #fffd00;
-			@include box-shadow(0 0 10px 0 rgba(0,0,0,0.5));
-		}
+        .main-header {
+            background-color: #fffd00;
+            @include box-shadow(0 0 10px 0 rgba(0,0,0,0.5));
+        }
 
-    	.header {
-    		background-color: #fffd00;
-    		max-width: 1110px;
-    		margin: 0 auto;
-			padding: 10px;
+        .header {
+            background-color: #fffd00;
+            max-width: 1110px;
+            margin: 0 auto;
+            padding: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
 
-    		.logo {
-    			img { display: block; }
-    		}
-    	}
+            .logo {
+                -ms-flex-preferred-size: 41%;
+                    flex-basis: 41%;
+                img { display: block; }
+            }
+
+            .header-title {
+                border-bottom: 5px solid #ff8111;
+                font-size: 2.5rem;
+                color: #333;
+                text-transform: uppercase;
+            }
+        }
     }

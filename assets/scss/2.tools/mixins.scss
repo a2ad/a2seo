@@ -6,9 +6,6 @@
         ========================================================================== */
         @mixin transition($parameters...) {
             -webkit-transition: $parameters;
-               -moz-transition: $parameters;
-                 -o-transition: $parameters;
-                -ms-transition: $parameters;
                     transition: $parameters;
         }
 
@@ -24,7 +21,6 @@
         ========================================================================== */
         @mixin box-sizing() {
             -webkit-box-sizing: border-box;
-               -moz-box-sizing: border-box;
                 -ms-box-sizing: border-box;
                     box-sizing: border-box;
         }
@@ -32,9 +28,7 @@
     /*  Border radius
         ========================================================================== */
         @mixin border-radius($radius) {
-            -webkit-border-radius: $radius;
-               -moz-border-radius: $radius;
-                    border-radius: $radius;
+            border-radius: $radius;
         }
 
     /*  Box shadow
@@ -63,26 +57,11 @@
         ========================================================================== */
         @mixin animation($parameters...) {
             -webkit-animation: $parameters;
-               -moz-animation: $parameters;
-                -ms-animation: $parameters;
-                 -o-animation: $parameters;
                     animation: $parameters;
         }
 
         @mixin keyframes($name) {
             @-webkit-keyframes #{$name} {
-                @content;
-            }
-
-            @-moz-keyframes #{$name} {
-                @content;
-            }
-
-            @-ms-keyframes #{$name} {
-                @content;
-            }
-
-            @-o-keyframes #{$name} {
                 @content;
             }
 
@@ -95,23 +74,16 @@
         ========================================================================== */
         @mixin transform($parameters) {
             -webkit-transform: $parameters;
-               -moz-transform: $parameters;
-                 -o-transform: $parameters;
-                -ms-transform: $parameters;
                     transform: $parameters;
         }
 
         @mixin transform-origin($valueX, $valueY) {
             -webkit-transform-origin: $valueX $valueY;
-               -moz-transform-origin: $valueX $valueY;
-                 -o-transform-origin: $valueX $valueY;
-                -ms-transform-origin: $valueX $valueY;
                     transform-origin: $valueX $valueY;
         }
 
         @mixin perspective($value) {
             -webkit-perspective: $value;
-               -moz-perspective: $value;
                 -ms-perspective: $value;
                  -o-perspective: $value;
                     perspective: $value;
@@ -120,21 +92,15 @@
     /*  Background-size
         ========================================================================== */
         @mixin background-size($value) {
-            -webkit-background-size: $value;
-               -moz-background-size: $value;
-                 -o-background-size: $value;
-                    background-size: $value;
+            background-size: $value;
         }
 
     /*  Gradients
         ========================================================================== */
         @mixin gradient($value...){
             background: transparent;
-            background:    -moz-linear-gradient($value);
             background:        -webkit-gradient($value);
-            background: -webkit-linear-gradient($value);
-            background:      -o-linear-gradient($value);
-            background:     -ms-linear-gradient($value);
+            background:         -webkit-gradient(linear, left top, left bottom, from($value));
             background:         linear-gradient($value);
         }
 
@@ -142,20 +108,13 @@
             ========================================================================== */
             @mixin simple-vertical-gradient($startColor, $endColor) {
                 background-color: $startColor;
-                background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
-                background: -webkit-linear-gradient(top, $startColor, $endColor);
-                background:    -moz-linear-gradient(top, $startColor, $endColor);
-                background:     -ms-linear-gradient(top, $startColor, $endColor);
-                background:      -o-linear-gradient(top, $startColor, $endColor);
+                background:         -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
                 background:         linear-gradient(to bottom, $startColor, $endColor);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
             }
 
             @mixin vertical-gradient($bgColor, $colors...) {
-                background: -webkit-linear-gradient(top, $colors) $bgColor;
-                background:    -moz-linear-gradient(top, $colors) $bgColor;
-                background:      -o-linear-gradient(top, $colors) $bgColor;
-                background:     -ms-linear-gradient(top, $colors) $bgColor;
+                background:         -webkit-gradient(linear, left top, left bottom, from($colors)) $bgColor;
                 background:         linear-gradient(to bottom, $colors) $bgColor;
             }
 
@@ -163,20 +122,13 @@
             ========================================================================== */
             @mixin simple-horizontal-gradient($startColor, $endColor) {
                 background-color: $startColor;
-                background: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
-                background: -webkit-linear-gradient(left, $startColor, $endColor);
-                background:    -moz-linear-gradient(left, $startColor, $endColor);
-                background:     -ms-linear-gradient(left, $startColor, $endColor);
-                background:      -o-linear-gradient(left, $startColor, $endColor);
+                background:         -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
                 background:         linear-gradient(to right, $startColor, $endColor);
                 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
             }
 
             @mixin horizontal-gradient($bgColor, $colors...) {
-                background: -webkit-linear-gradient(left, $colors) $bgColor;
-                background:    -moz-linear-gradient(left, $colors) $bgColor;
-                background:      -o-linear-gradient(left, $colors) $bgColor;
-                background:     -ms-linear-gradient(left, $colors) $bgColor;
+                background:         -webkit-gradient(linear, left top, right top, from($colors)) $bgColor;
                 background:         linear-gradient(to right, $colors) $bgColor;
             }
 
@@ -184,16 +136,13 @@
         ========================================================================== */
         @mixin column($count, $gap, $line:'') {
             -webkit-column-count: $count;
-               -moz-column-count: $count;
                     column-count: $count;
 
             -webkit-column-gap: $gap;
-               -moz-column-gap: $gap;
                     column-gap: $gap;
 
             @if $line != '' {
             -webkit-column-rule: $line;
-               -moz-column-rule: $line;
                     column-rule: $line;
             }
         }
