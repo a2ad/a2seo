@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<link rel="icon" href="build/img/favicon.ico">
+	<title>A2 SEO</title>
+	<link rel="stylesheet" href="build/css/main.min.css">
+</head>
+<body>
+<main class="main">
+	<!-- Header -->
+	<div class="main-header">
+		<header class="header">
+			<h1 class="logo">
+				<a href="a2ad.com.br">
+					<img src="build/img/logo-a2ad.svg" alt="A2ad">
+				</a>
+			</h1>
+		</header>
+	</div>
+	<!-- Content -->
+	<div class="content">
+		<h2>Apenas digite os dados e gere as meta tags</h2>
+
+		<!-- General meta tags -->
+		<section class="general-data">
+			<h3>Gerais</h3>
+			
+			<div class="wrapper">
+				<div>
+					<label for="title">Título do site <span>*</span></label>
+					<input placeholder="Ex: A2ad whatever digital" type="text" name="title" id="title">
+				</div>
+				
+				<div>
+					<label for="description">Descrição do site <span>*</span></label>
+					<input placeholder="Ex: A A2ad é um novo conceito de agência que utiliza social influence e content marketing para aproximar marcas e consumidores" type="text" name="description" id="description">
+				</div>
+
+				<div>
+					<label for="author">Autor do site <span>*</span></label>
+					<input placeholder="Ex: A2ad" type="text" name="author" id="author">
+				</div>
+
+				<div>
+					<label for="image">Imagem <span>*</span></label>
+					<input placeholder="Ex: http://a2ad.com.br/img/logo.png" type="text" name="image" id="image">
+				</div>
+
+				<div>
+					<label for="canonical">Canonical <span>*</span></label>
+					<input placeholder="Ex: http://a2ad.com.br/" type="text" name="canonical" id="canonical">
+				</div>
+
+				<div>
+					<label for="robots">Robots <span>*</span></label>
+					<select name="robots" id="robots">
+						<option value="index/follow">index/follow</option>
+						<option value="noindex/follow">noindex/follow</option>
+						<option value="index/nofollow">index/nofollow</option>
+						<option value="noarchive">noarchive</option>
+						<option value="nosnippet">nosnippet</option>
+						<option value="noodp">noodp</option>
+						<option value="notranslate">notranslate</option>
+						<option value="noimageindex">noimageindex</option>
+						<option value="none">none</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="url-base">Url Base <span>*</span></label>
+					<input placeholder="Ex: http://a2ad.com.br/" type="text" name="url-base" id="url-base">
+				</div>
+
+				<div>
+					<label for="sitemap">Site Map <span>*</span></label>
+					<input placeholder="Ex: http://a2ad.com.br/sitemap.xml" type="text" name="sitemap" id="sitemap">
+				</div>
+
+				<div>
+					<label for="theme-color">Theme Color <span>*</span></label>
+					<input type="color" name="theme-color" id="theme-color">
+				</div>
+			</div>
+		</section>
+		
+		<!-- Facebook meta tags -->
+		<section class="facebook-data">
+			<h3>Facebook</h3>
+
+			<div class="wrapper">
+				<div>
+					<label for="fb-title">Site name <span>*</span></label>
+					<input placeholder="Ex: A2ad whatever digital" type="text" name="fb-title" id="fb-title">
+				</div>
+
+				<div>
+					<label for="fb-type">Tipo <span>*</span></label>
+					<select name="fb-type" id="fb-type">
+						<option value="website">website</option>
+						<option value="blog">blog</option>
+						<option value="article">article</option>
+						<option value="activity">activity</option>
+						<option value="sport">sport</option>
+						<option value="company">company</option>
+						<option value="restaurant">restaurant</option>
+						<option value="hotel">hotel</option>
+						<option value="cause">cause</option>
+						<option value="band">band</option>
+						<option value="government">government</option>
+						<option value="non_profit">non_profit</option>
+						<option value="school">school</option>
+						<option value="university">university</option>
+						<option value="actor">actor</option>
+						<option value="athlete">athlete</option>
+						<option value="city">city</option>
+						<option value="country">country</option>
+						<option value="album">album</option>
+						<option value="book">book</option>
+						<option value="drink">drink</option>
+						<option value="game">game</option>
+						<option value="product">product</option>
+						<option value="song">song</option>
+						<option value="movie">movie</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="fb-appid">App ID <span>*</span></label>
+					<input placeholder="Ex: 384593848366233" type="text" name="fb-appid" id="fb-appid">
+				</div>
+
+				<div>
+					<label for="fb-admins">FB Admins <span>*</span></label>
+					<input placeholder="Ex: 100003036613503" type="text" name="fb-admins" id="fb-admins">
+				</div>
+
+				<div>
+					<label for="fb-locale">Locale <span>*</span></label>
+					<input placeholder="Ex: pt_BR" type="text" name="fb-locale" id="fb-locale">
+				</div>
+			</div>
+		</section>
+
+		<!-- Twitter meta tags -->
+		<section class="twitter-data">
+			<h3>Twitter</h3>
+
+			<div class="wrapper">
+				<div>
+					<label for="tw-card">Twitter Card <span>*</span></label>
+					<select name="tw-card" id="tw-card">
+						<option value="Summary">Summary</option>
+						<option value="Product">Product</option>
+						<option value="Photo">Photo</option>
+						<option value="Summary Large Image">Summary Large Image</option>
+						<option value="Player">Player</option>
+						<option value="App">App</option>
+						<option value="Gallery">Gallery</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<div class="generate">
+			<button class="btn btn-primary" id="generate">Generate SEO</button>
+		</div>
+
+		<section class="output">
+		<h2>Seu código:</h2>
+			<pre>
+<span class="comment">&lt;!-- General markup --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span id="o-title">A2ad whatever digital</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">description</span>" content="<span id="o-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">author</span>" content="<span id="o-author" class="value">A2ad</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;link</span> rel="<span class="value">base</span>" href="<span id="o-url" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;link</span> rel="<span class="value">canonical</span>" href="<span id="o-canonical" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> rel="<span class="value">sitemap</span>" type="<span class="value">application/xml</span>" href="<span id="o-sitemap" class="value">http://a2ad.com.br/sitemap.xml</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">robots</span>" content="<span id="o-robots" class="value">index/follow</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">googlebot</span>" content="<span id="o-googlebot" class="value">index/follow</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">theme-color</span>" content="<span id="o-themecolor" class="value">#fffd00</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">msapplication-navbutton-color</span>" content="<span id="o-themecolor-ms" class="value">#fffd00</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">apple-mobile-web-app-status-bar-style</span>" content="<span id="o-themecolor-apple" class="value">#fffd00</span>"<span class="tag">&gt;</span>
+
+<span class="comment">&lt;-- Schema.org markup for Google+ --&gt;</span>
+<span class="tag">&lt;meta</span> itemprop="<span class="value">name</span>" content="<span id="o-google-name" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> itemprop="<span class="value">description</span>" content="<span id="o-google-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> itemprop="<span class="value">image</span>" content="<span id="o-google-image" class="value">http://a2ad.com.br/img/logo.png</span>"<span class="tag">&gt;</span>
+
+<span class="comment">&lt;-- Markup for Facebook --&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:type</span>" content="<span id="o-fb-type" class="value">website</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:title</span>" content="<span id="o-fb-title" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:url</span>" content="<span id="o-fb-url" class="value">http://a2ad.com.br</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:site_name</span>" content="<span id="o-fb-sitename" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:image</span>" content="<span id="o-fb-image" class="value">http://a2ad.com.br/img/logo.png</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:description</span>" content="<span id="o-fb-description" class="value">A A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">og:locale</span>" content="<span id="o-fb-locale" class="value">pt_BR</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">fb:app_id</span>" content="<span id="o-fb-appid" class="value">384593848366233</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> property="<span class="value">fb:admins</span>" content="<span id="o-fb-admins" class="value">100003036613503</span>"<span class="tag">&gt;</span>
+
+<span class="comment">&lt;-- Markup for Twitter --&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">twitter:card</span>" content="<span id="o-tw-card" class="value">summary</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">twitter:title</span>" content="<span id="o-tw-title" class="value">A2ad whatever digital</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">twitter:description</span>" content="<span id="o-tw-description" class="value">A2ad é um novo conceito de agência que...</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">twitter:creator</span>" content="<span id="o-tw-creator" class="value">A2ad</span>"<span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> name="<span class="value">twitter:image</span>" content="<span id="o-tw-image" class="value">http://a2ad.com.br/img/logo.png</span>"<span class="tag">&gt;</span>
+			</pre>
+		</section>
+	</div>
+</main>
+<script src="build/js/libs/html5shiv.min.js"></script>
+<script src="build/js/scripts.min.js"></script>
+</body>
+</html>

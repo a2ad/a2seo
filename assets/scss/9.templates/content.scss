@@ -1,0 +1,62 @@
+/*  ==========================================================================
+    Content
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+    @media only screen {
+		.content {
+            max-width: 1110px;
+            margin: 30px auto 0px auto;
+            padding: 10px;
+
+            h2 { 
+                text-align: center; 
+                color: $font-color; 
+                font-weight: 300;
+            }
+
+            section {
+                margin: 80px auto;
+                max-width: 1000px;
+                @include box-shadow(0px 0px 10px 0px rgba(0,0,0,0.2));
+
+                h3 { 
+                    font-weight: 300; 
+                    padding: 10px 20px;
+                    border-left: 5px solid #fffd00;
+                }
+            }
+
+            .twitter-data {
+                margin-bottom: 20px;
+            }
+
+            .generate { 
+                display: flex;
+                justify-content: center;
+
+                button { cursor: pointer; }
+            }
+
+            .output {
+                display: none;
+                
+                h2 { text-align: left; padding: 10px 0 0 10px; }
+                pre {
+                    background-color: #001800;
+                    color: #55cc66;
+                    text-align: left;
+                    padding: 10px;
+                    font-size: 12px;
+                    overflow: auto;
+
+                    .tag { color: tomato; }
+                    .value { color: orange; }
+                    .comment { color: #999; }
+                }
+            }
+        }
+    }

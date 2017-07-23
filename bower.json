@@ -1,0 +1,23 @@
+{
+  "name": "a2seo",
+  "description": "Gerador de SEO",
+  "main": "index.js",
+  "license": "ISC",
+  "keywords": [
+    "seo",
+    "metatags",
+    "a2ad"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^5.0.0",
+    "html5shiv": "^3.7.3"
+  }
+}

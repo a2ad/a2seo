@@ -1,0 +1,33 @@
+::-moz-selection {
+    background: #666;
+    text-shadow: none;
+    color: #fff;
+}
+
+::selection {
+    background: #666;
+    text-shadow: none;
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+object,
+embed,
+iframe { max-width: 100%; }
+
+img { height: auto; }
+
+ul { padding-left: 18px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin: 0; padding: 0; }
+
+* { @include box-sizing(); }

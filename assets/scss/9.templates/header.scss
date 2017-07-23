@@ -1,0 +1,25 @@
+/*  ==========================================================================
+    Header
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+    @media only screen {
+		.main-header {
+			background-color: #fffd00;
+			@include box-shadow(0 0 10px 0 rgba(0,0,0,0.5));
+		}
+
+    	.header {
+    		background-color: #fffd00;
+    		max-width: 1110px;
+    		margin: 0 auto;
+			padding: 10px;
+
+    		.logo {
+    			img { display: block; }
+    		}
+    	}
+    }

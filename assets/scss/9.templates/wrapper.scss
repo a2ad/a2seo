@@ -1,0 +1,56 @@
+/*  ==========================================================================
+    Wrapper
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+    @media only screen {
+		.wrapper {
+            margin: 20px auto 0 auto;
+            max-width: 900px;
+            padding: 0px 20px 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+
+            div { 
+                width: 50%;
+                margin-bottom: 50px;
+            }
+
+            label { 
+                display: flex;
+                color: $font-color;
+                font-weight: 300;
+                padding-bottom: 20px;
+
+                span { color: tomato; }
+            }
+
+            input, 
+            select { 
+                border: 0;
+                border-bottom: 1px solid $color-gray;
+                outline: none;
+                width: 90%;
+                color: $font-color;
+                font-weight: 300;
+            }
+        }
+    }
+
+    /*
+     * CSS for Small devices (tablets, 768px and up)
+     */
+
+    @media (max-width: $breakpoint) { 
+        .wrapper {
+            display: block;
+
+            div,
+            input { width: 100%; }
+        }
+
+    }
+
