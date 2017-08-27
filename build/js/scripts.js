@@ -14,20 +14,20 @@
 		robots: 		document.querySelector('#robots'),
 		urlBase: 		document.querySelector('#url-base'),
 		sitemap: 		document.querySelector('#sitemap'),
-		themeColor: 	document.querySelector('#theme-color'),	
+		themeColor: 	document.querySelector('#theme-color'),
 
 		// Facebook meta tags
 		fbTitle: 		document.querySelector('#fb-title'),
-		fbType: 		document.querySelector('#fb-type'),	
+		fbType: 		document.querySelector('#fb-type'),
 		fbAppid: 		document.querySelector('#fb-appid'),
-		fbAdmins: 		document.querySelector('#fb-admins'),	
-		fbLocale: 		document.querySelector('#fb-locale'),	
+		fbAdmins: 		document.querySelector('#fb-admins'),
+		fbLocale: 		document.querySelector('#fb-locale'),
 
 		// Twitter meta tags
-		twCard: 		document.querySelector('#tw-card'),	
+		twCard: 		document.querySelector('#tw-card'),
 
 		// Output
-		oTitle: 		document.querySelector('#o-title'),	
+		oTitle: 		document.querySelector('#o-title'),
 		oDescription: 	document.querySelector('#o-description'),
 		oAuthor: 		document.querySelector('#o-author'),
 		oUrl: 			document.querySelector('#o-url'),
@@ -68,6 +68,7 @@
 		generateSEOTags: function() {
 			app.btn.addEventListener('click', function() {
 				app.output.style.display = 'block';
+				initialConfig.saveDataInSessionStorage();
 
 				app.oTitle.innerText = app.title.value;
 
@@ -100,9 +101,16 @@
 				app.oTwDesc.innerText = app.description.value;
 				app.oTwCreator.innerText = app.author.value;
 				app.oTwImage.innerText = app.image.value;
-			})
+			});
+		},
+
+		saveDataInSessionStorage: function() {
+			var allFields = document.querySelectorAll('input, select');
+			Array.prototype.forEach.call(allFields, function(field){
+				sessionStorage.setItem(field.name, JSON.stringify(field.value));
+			});
 		}
-	}
+	};
 
 	initialConfig.init();
 })();
